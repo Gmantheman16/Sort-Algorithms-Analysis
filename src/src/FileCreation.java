@@ -3,9 +3,9 @@ public class FileCreation {
   public static void main(String[] args) {
     //Creates FileGenerator object
     FileGenerator fileGen = new FileGenerator();
-    String smallLocation = "C:\\Users\\gman1\\Algorithms Sorting Project\\src\\src\\SmallFiles\\";
-    String mediumLocation = "C:\\Users\\gman1\\Algorithms Sorting Project\\src\\src\\MediumFiles\\";
-    String largeLocation = "C:\\Users\\gman1\\Algorithms Sorting Project\\src\\src\\LargeFiles\\";
+    String smallLocation = "src/src/SmallFiles/";
+    String mediumLocation = "src/src/MediumFiles/";
+    String largeLocation = "src/src/LargeFiles/";
 
     //Generate files
     for(int i = 1; i <= 30; i++) {
