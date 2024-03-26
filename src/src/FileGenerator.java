@@ -11,7 +11,7 @@ public class FileGenerator {
     Random random = new Random();
 
     try (BufferedWriter writer = new BufferedWriter(new FileWriter(name))) {
-      // Generate and write n random numbers to the file
+      // Generate and write random numbers to the file
       for (int i = 0; i < numbers; i++) {
         int randomNumber = random.nextInt(10000); // Generates a number between 0 and 9999
         writer.write(randomNumber + " ");
