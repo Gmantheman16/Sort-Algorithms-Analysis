@@ -6,7 +6,6 @@ public class QuickSort {
       return;
     }
     int pivot = pivotSelection(integers, left, right);
-
     int[] partition = fatPartition(integers,left,right,pivot);
 
     quickSort(integers, left, partition[0] - 1);
