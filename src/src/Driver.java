@@ -15,21 +15,29 @@ public class Driver {
     double[] mergeSortTime = new double[30];
     double[] heapSortTime = new double[30];
     QuickSort qsort = new QuickSort();
+    MergeSort msort = new MergeSort();
 
     //Unsorted small files
     for(int i = 1; i <= 30; i++) {
       Integer[] integers = fileReader.FileArray(smallLocation + "smallFile" + i);
+
+      //QuickSort
       double startTime = System.currentTimeMillis();
-      //Start QuickSort with integers array: Type 1 = unsorted
-      qsort.quickSort(integers, 0, integers.length-1, 1);
+      //Start QuickSort with integers array:
+      qsort.quickSort(integers, 0, integers.length-1);
       double endTime = System.currentTimeMillis();
       //Store time for quicksort in the correct array position
       quickSortTime[i-1] = (endTime - startTime);
+
+      //MergeSort
       startTime = System.currentTimeMillis();
       //Start MergeSort with integers array
+      msort.mergeSort(integers, 0, integers.length-1);
       endTime = System.currentTimeMillis();
       //Store time for mergesort in the correct array position
       mergeSortTime[i-1] = (endTime - startTime);
+
+      //HeapSort
       startTime = System.currentTimeMillis();
       //Start HeapSort with integers array
       endTime = System.currentTimeMillis();

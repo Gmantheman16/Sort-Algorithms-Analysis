@@ -1,20 +1,20 @@
 import java.util.Arrays;
 
 public class QuickSort {
-  public void quickSort(Integer[] integers, int left, int right, int type) {
+  public void quickSort(Integer[] integers, int left, int right) {
     if(left >= right) {
       return;
     }
-    int pivot = pivotSelection(integers, left, right, type);
+    int pivot = pivotSelection(integers, left, right);
 
     int[] partition = fatPartition(integers,left,right,pivot);
 
-    quickSort(integers, left, partition[0] - 1, type);
-    quickSort(integers, partition[1] + 1, right, type);
+    quickSort(integers, left, partition[0] - 1);
+    quickSort(integers, partition[1] + 1, right);
 
   }
-  private int pivotSelection(Integer[] integers, int left, int right, int type) {
-    if(type == 1 && right - left > 101) {
+  private int pivotSelection(Integer[] integers, int left, int right) {
+    if(right - left > 101) {
       int[] values = {integers[left], integers[(left + right) / 2], integers[right-1]};
       Arrays.sort(values);
       return values[1];
