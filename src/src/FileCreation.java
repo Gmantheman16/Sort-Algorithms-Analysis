@@ -7,11 +7,11 @@ public class FileCreation {
     String mediumLocation = "src/src/MediumFiles/";
     String largeLocation = "src/src/LargeFiles/";
 
-    //Generate files
+    //Generate unsorted files
     for(int i = 1; i <= 30; i++) {
-      fileGen.generate(10000, smallLocation + "smallFile" + i );
-      fileGen.generate(100000, mediumLocation + "mediumFile" + i);
-      fileGen.generate(1000000, largeLocation + "largeFile" + i);
+      fileGen.generate(10000, smallLocation + "smallFile" + i, 1);
+      fileGen.generate(100000, mediumLocation + "mediumFile" + i,1);
+      fileGen.generate(1000000, largeLocation + "largeFile" + i,1);
     }
   }
 }
