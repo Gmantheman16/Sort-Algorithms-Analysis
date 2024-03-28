@@ -7,15 +7,15 @@ public class Driver {
   public static void main(String[] args) {
     FileToArray fileReader = new FileToArray();
     //All paths to locations of files
-    String smallLocation = "src/src/SmallFiles/";
-    String mediumLocation = "src/src/MediumFiles/";
-    String largeLocation = "src/src/LargeFiles/";
-    String sortedSmallLocation = "src/src/SortedSmallFiles/";
-    String sortedMediumLocation = "src/src/SortedMediumFiles/";
-    String sortedLargeLocation = "src/src/SortedLargeFiles/";
-    String reverseSmallLocation = "src/src/ReverseSmallFiles/";
-    String reverseMediumLocation = "src/src/ReverseMediumFiles/";
-    String reverseLargeLocation = "src/src/ReverseLargeFiles/";
+    String smallLocation = "Sort-Algorithms-Analysis/src/SmallFiles/";
+    String mediumLocation = "Sort-Algorithms-Analysis/src/MediumFiles/";
+    String largeLocation = "Sort-Algorithms-Analysis/src/LargeFiles/";
+    String sortedSmallLocation = "Sort-Algorithms-Analysis/src/SortedSmallFiles/";
+    String sortedMediumLocation = "Sort-Algorithms-Analysis/src/SortedMediumFiles/";
+    String sortedLargeLocation = "Sort-Algorithms-Analysis/src/SortedLargeFiles/";
+    String reverseSmallLocation = "Sort-Algorithms-Analysis/src/ReverseSmallFiles/";
+    String reverseMediumLocation = "Sort-Algorithms-Analysis/src/ReverseMediumFiles/";
+    String reverseLargeLocation = "Sort-Algorithms-Analysis/src/ReverseLargeFiles/";
 
     double[] quickSortTime = new double[30];
     double[] mergeSortTime = new double[30];

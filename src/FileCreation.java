@@ -4,15 +4,15 @@ public class FileCreation {
     //Creates FileGenerator object
     FileGenerator fileGen = new FileGenerator();
     //All paths to direct where files get generated into
-    String smallLocation = "src/src/SmallFiles/";
-    String mediumLocation = "src/src/MediumFiles/";
-    String largeLocation = "src/src/LargeFiles/";
-    String smallSortedLocation = "src/src/SortedSmallFiles/";
-    String mediumSortedLocation = "src/src/SortedMediumFiles/";
-    String largeSortedLocation = "src/src/SortedLargeFiles/";
-    String smallReverseLocation = "src/src/ReverseSmallFiles/";
-    String mediumReverseLocation = "src/src/ReverseMediumFiles/";
-    String largeReverseLocation = "src/src/ReverseLargeFiles/";
+    String smallLocation = "Sort-Algorithms-Analysis/src/SmallFiles/";
+    String mediumLocation = "Sort-Algorithms-Analysis/src/MediumFiles/";
+    String largeLocation = "Sort-Algorithms-Analysis/src/LargeFiles/";
+    String smallSortedLocation = "Sort-Algorithms-Analysis/src/SortedSmallFiles/";
+    String mediumSortedLocation = "Sort-Algorithms-Analysis/src/SortedMediumFiles/";
+    String largeSortedLocation = "Sort-Algorithms-Analysis/src/SortedLargeFiles/";
+    String smallReverseLocation = "Sort-Algorithms-Analysis/src/ReverseSmallFiles/";
+    String mediumReverseLocation = "Sort-Algorithms-Analysis/src/ReverseMediumFiles/";
+    String largeReverseLocation = "Sort-Algorithms-Analysis/src/ReverseLargeFiles/";
 
 
     //Generate unsorted files
