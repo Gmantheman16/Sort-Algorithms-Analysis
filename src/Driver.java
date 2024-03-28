@@ -29,7 +29,7 @@ public class Driver {
     //Unsorted small files
     for(int i = 1; i <= 30; i++) {
       //Converts file to an Integer array to be sorted
-      Integer[] integers = fileReader.FileArray(smallLocation + "smallFile" + i);
+      int[] integers = fileReader.FileArray(smallLocation + "smallFile" + i);
 
       //QuickSort
       double startTime = System.currentTimeMillis();
@@ -79,7 +79,7 @@ public class Driver {
     //Unsorted medium files
     for(int i = 1; i <= 30; i++) {
       //Converts file to an Integer array to be sorted
-      Integer[] integers = fileReader.FileArray(mediumLocation + "mediumFile" + i);
+      int[] integers = fileReader.FileArray(mediumLocation + "mediumFile" + i);
 
       //QuickSort
       double startTime = System.currentTimeMillis();
@@ -128,7 +128,7 @@ public class Driver {
     //Unsorted large files
     for(int i = 1; i <= 30; i++) {
       //Converts file to an Integer array to be sorted
-      Integer[] integers = fileReader.FileArray(largeLocation + "largeFile" + i);
+      int[] integers = fileReader.FileArray(largeLocation + "largeFile" + i);
 
       //QuickSort
       double startTime = System.currentTimeMillis();
@@ -178,7 +178,7 @@ public class Driver {
     //Sorted Small Files
     for(int i = 1; i <= 30; i++) {
       //Converts file to an Integer array to be sorted
-      Integer[] integers = fileReader.FileArray(sortedSmallLocation + "smallSorted" + i);
+      int[] integers = fileReader.FileArray(sortedSmallLocation + "smallSorted" + i);
 
       //QuickSort
       double startTime = System.currentTimeMillis();
@@ -227,7 +227,7 @@ public class Driver {
     //Sorted Medium Files
     for(int i = 1; i <= 30; i++) {
       //Converts file to an Integer array to be sorted
-      Integer[] integers = fileReader.FileArray(sortedMediumLocation + "mediumSorted" + i);
+      int[] integers = fileReader.FileArray(sortedMediumLocation + "mediumSorted" + i);
 
       //QuickSort
       double startTime = System.currentTimeMillis();
@@ -277,7 +277,7 @@ public class Driver {
     //Sorted Large Files
     for(int i = 1; i <= 30; i++) {
       //Converts file to an Integer array to be sorted
-      Integer[] integers = fileReader.FileArray(sortedLargeLocation + "largeSorted" + i);
+      int[] integers = fileReader.FileArray(sortedLargeLocation + "largeSorted" + i);
 
       //QuickSort
       double startTime = System.currentTimeMillis();
@@ -328,7 +328,7 @@ public class Driver {
     //Reverse-Sorted Small Files
     for(int i = 1; i <= 30; i++) {
       //Converts file to an Integer array to be sorted
-      Integer[] integers = fileReader.FileArray(reverseSmallLocation + "smallReverse" + i);
+      int[] integers = fileReader.FileArray(reverseSmallLocation + "smallReverse" + i);
 
       //QuickSort
       double startTime = System.currentTimeMillis();
@@ -376,7 +376,7 @@ public class Driver {
     //Reverse-Sorted Medium Files
     for(int i = 1; i <= 30; i++) {
       //Converts file to an Integer array to be sorted
-      Integer[] integers = fileReader.FileArray(reverseMediumLocation + "mediumReverse" + i);
+      int[] integers = fileReader.FileArray(reverseMediumLocation + "mediumReverse" + i);
 
       //QuickSort
       double startTime = System.currentTimeMillis();
@@ -425,7 +425,7 @@ public class Driver {
     //Reverse-Sorted Large Files
     for(int i = 1; i <= 30; i++) {
       //Converts file to an Integer array to be sorted
-      Integer[] integers = fileReader.FileArray(reverseLargeLocation + "largeReverse" + i);
+      int[] integers = fileReader.FileArray(reverseLargeLocation + "largeReverse" + i);
 
       //QuickSort
       double startTime = System.currentTimeMillis();

@@ -6,7 +6,7 @@ public class MergeSort {
    * @param left the position of the element furthest on the left
    * @param right the position of the element furthest on the right
    */
-  public void mergeSort(Integer[] integers, int left, int right) {
+  public void mergeSort(int[] integers, int left, int right) {
     if(left < right) {
 
       int middle = (left + right) / 2;
@@ -25,15 +25,15 @@ public class MergeSort {
    * @param middle the position of the middle element of array
    * @param right the position of the element of array furthest to the right
    */
-  private void merge(Integer[] array, int left, int middle, int right) {
+  private void merge(int[] array, int left, int middle, int right) {
     //len1 = the length of the left subarray
     int len1 = middle - left + 1;
     //len2 = the length of the right subarray
     int len2 = right - middle;
     int i = 0, j = 0, k = left;
 
-    Integer[] leftArray = new Integer[len1];
-    Integer[] rightArray = new Integer[len2];
+    int[] leftArray = new int[len1];
+    int[] rightArray = new int[len2];
 
     //Copies left subarray of array into leftArray
     System.arraycopy(array, left, leftArray, 0, len1);
@@ -66,7 +66,7 @@ public class MergeSort {
   }
 
   //Used for testing
-  static void printArray(Integer[] array) {
+  static void printArray(int[] array) {
     for(int i : array) {
       System.out.print(i + " ");
     }

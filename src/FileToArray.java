@@ -7,11 +7,10 @@ import java.util.*;
 public class FileToArray {
 
   /**
-   *
    * @param name the name of the file to be converted into an array
    * @return the values that were in the given file in an Integer array
    */
-    public Integer[] FileArray(String name) {
+    public int[] FileArray(String name) {
 
           List<Integer> numberList = new ArrayList<>();
 
@@ -28,7 +27,7 @@ public class FileToArray {
           }
 
           // Convert ArrayList to array
-      return numberList.toArray(new Integer[0]);
+      return numberList.stream().mapToInt(i -> i).toArray();
     }
 }
 

@@ -7,7 +7,7 @@ public class QuickSort {
    * @param left the position of the leftmost element of the unsorted portion
    * @param right the position of the rightmost element of the unsorted portion
    */
-  public void quickSort(Integer[] integers, int left, int right) {
+  public void quickSort(int[] integers, int left, int right) {
     if(left >= right) {
       return;
     }
@@ -30,7 +30,7 @@ public class QuickSort {
    * @param right the rightmost element's position of integers
    * @return the median of the leftmost, rightmost, and middle value of integers
    */
-  private int pivotSelection(Integer[] integers, int left, int right) {
+  private int pivotSelection(int[] integers, int left, int right) {
     if(right - left > 101) {
       if(left >= right) {
         return left;
@@ -51,15 +51,19 @@ public class QuickSort {
    * @param pivot the pivot of array
    * @return array with left and right partition
    */
-  private int[] fatPartition(Integer[] array, int left, int right, int pivot) {
-    int i = left, less = left, greater = right;
+  private int[] fatPartition(int[] array, int left, int right, int pivot) {
+
+
+    int i = left;
+    int less = left;
+    int greater = right;
 
     while(i <= greater) {
       //If array[i] is less than the pivot
-      if(array[i].compareTo(pivot) < 0) {
+      if(array[i] < pivot) {
         swap(array, less++, i++);
         //If array[i] is greater than the pivot
-      } else if(array[i].compareTo(pivot) > 0) {
+      } else if(array[i] > pivot) {
         swap(array, i, greater--);
         //If array[i] is equal to the pivot
       } else {
@@ -75,7 +79,7 @@ public class QuickSort {
    * @param i position of element to be swapped
    * @param j position of element to be swapped with i
    */
-  private void swap(Integer[] array, int i, int j) {
+  private void swap(int[] array, int i, int j) {
     int temp = array[i];
     array[i] = array[j];
     array[j] = temp;

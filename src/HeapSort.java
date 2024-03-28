@@ -4,7 +4,7 @@ public class HeapSort {
    *
    * @param integers the array to be heapSorted
    */
-  public void heapSort(Integer[] integers) {
+  public void heapSort(int[] integers) {
     int n = integers.length;
 
     //Build Heap
@@ -28,7 +28,7 @@ public class HeapSort {
    * @param n the length of array
    * @param i the root of the heap
    */
-  private void heapify(Integer[] array, int n, int i) {
+  private void heapify(int[] array, int n, int i) {
     int largest = i;
     int left = 2 * i + 1;
     int right = 2 * i + 2;
