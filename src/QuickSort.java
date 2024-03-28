@@ -61,10 +61,19 @@ public class QuickSort {
     while(i <= greater) {
       //If array[i] is less than the pivot
       if(array[i] < pivot) {
-        swap(array, less++, i++);
+        int temp = array[less];
+        array[less] = array[i];
+        array[i] = temp;
+
+        less++;
+        i++;
         //If array[i] is greater than the pivot
       } else if(array[i] > pivot) {
-        swap(array, i, greater--);
+        int temp = array[i];
+        array[i] = array[greater];
+        array[greater] = temp;
+
+        greater--;
         //If array[i] is equal to the pivot
       } else {
         i++;
@@ -73,20 +82,8 @@ public class QuickSort {
     return new int[] {less, greater};
   }
 
-  /**
-   *
-   * @param array array to have its elements swapped
-   * @param i position of element to be swapped
-   * @param j position of element to be swapped with i
-   */
-  private void swap(int[] array, int i, int j) {
-    int temp = array[i];
-    array[i] = array[j];
-    array[j] = temp;
-  }
-
   //Used for testing
-  public static void printArray(Integer[] array) {
+  public static void printArray(int[] array) {
     for(int i : array) {
       System.out.print(i + " ");
     }
@@ -94,20 +91,20 @@ public class QuickSort {
   }
 /**
   public static void main(String[] args) {
-    String smallLocation = "src/src/SmallFiles/";
-    String mediumLocation = "src/src/MediumFiles/";
-    String largeLocation = "src/src/LargeFiles/";
+    String smallLocation = "src/SmallFiles/";
+    String mediumLocation = "src/MediumFiles/";
+    String largeLocation = "src/LargeFiles/";
     QuickSort qs = new QuickSort();
     FileToArray fileReader = new FileToArray();
-    Integer[] array = fileReader.FileArray(mediumLocation + "mediumFile" + 1);
+    int[] array = fileReader.FileArray(mediumLocation + "mediumFile" + 1);
     System.out.println("Original array:");
     printArray(array);
 
-    qs.quickSort(array, 0, array.length - 1, 1);
+    qs.quickSort(array, 0, array.length - 1);
 
     System.out.println("Sorted array:");
     printArray(array);
     System.out.println("Sorted array length: " + array.length);
   }
- **/
+**/
 }
