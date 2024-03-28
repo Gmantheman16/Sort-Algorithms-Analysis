@@ -32,9 +32,9 @@ public class FileGenerator {
     }
     //Sorted File Generation
     if (type == 2) {
-      String smallLocation = "Sort-Algorithms-Analysis/src/SmallFiles/";
-      String mediumLocation = "Sort-Algorithms-Analysis/src/MediumFiles/";
-      String largeLocation = "Sort-Algorithms-Analysis/src/LargeFiles/";
+      String smallLocation = "src/SmallFiles/";
+      String mediumLocation = "src/MediumFiles/";
+      String largeLocation = "src/LargeFiles/";
       FileToArray fileReader = new FileToArray();
       String tempName;
 
@@ -95,9 +95,9 @@ public class FileGenerator {
     //Reverse-Sorted File Generation
     if (type == 3) {
       String tempName;
-      String sortedSmallLocation = "Sort-Algorithms-Analysis/src/SortedSmallFiles/";
-      String sortedMediumLocation = "Sort-Algorithms-Analysis/src/SortedMediumFiles/";
-      String sortedLargeLocation = "Sort-Algorithms-Analysis/src/SortedLargeFiles/";
+      String sortedSmallLocation = "src/SortedSmallFiles/";
+      String sortedMediumLocation = "src/SortedMediumFiles/";
+      String sortedLargeLocation = "src/SortedLargeFiles/";
       FileToArray fileReader = new FileToArray();
 
       for (int i = 1; i <= 30; i++) {
