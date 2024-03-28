@@ -1,5 +1,9 @@
 public class HeapSort {
 
+  /**
+   *
+   * @param integers the array to be heapSorted
+   */
   public void heapSort(Integer[] integers) {
     int n = integers.length;
 
@@ -18,6 +22,12 @@ public class HeapSort {
     }
   }
 
+  /**
+   *
+   * @param array the array to be heapified
+   * @param n the length of array
+   * @param i the root of the heap
+   */
   private void heapify(Integer[] array, int n, int i) {
     int largest = i;
     int left = 2 * i + 1;
@@ -41,6 +51,7 @@ public class HeapSort {
     }
   }
 
+  //Used for testing
   private static void printArray(Integer[] array) {
     int n = array.length;
     for(int i = 0; i < n; ++i) {

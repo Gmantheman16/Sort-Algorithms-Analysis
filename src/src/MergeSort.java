@@ -1,5 +1,11 @@
 public class MergeSort {
 
+  /**
+   *
+   * @param integers the array to be mergeSorted
+   * @param left the position of the element furthest on the left
+   * @param right the position of the element furthest on the right
+   */
   public void mergeSort(Integer[] integers, int left, int right) {
     if(left < right) {
 
@@ -12,15 +18,26 @@ public class MergeSort {
     }
   }
 
+  /**
+   *
+   * @param array the array to be merged
+   * @param left the position of the element of array furthest to the left
+   * @param middle the position of the middle element of array
+   * @param right the position of the element of array furthest to the right
+   */
   private void merge(Integer[] array, int left, int middle, int right) {
+    //len1 = the length of the left subarray
     int len1 = middle - left + 1;
+    //len2 = the length of the right subarray
     int len2 = right - middle;
     int i = 0, j = 0, k = left;
 
     Integer[] leftArray = new Integer[len1];
     Integer[] rightArray = new Integer[len2];
 
+    //Copies left subarray of array into leftArray
     System.arraycopy(array, left, leftArray, 0, len1);
+    //Copies right subarray of array into rightArray
     System.arraycopy(array, middle + 1, rightArray, 0, len2);
 
     //Merge leftArray and rightArray
@@ -48,6 +65,7 @@ public class MergeSort {
     }
   }
 
+  //Used for testing
   static void printArray(Integer[] array) {
     for(int i : array) {
       System.out.print(i + " ");

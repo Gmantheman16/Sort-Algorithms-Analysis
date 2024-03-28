@@ -6,13 +6,20 @@ import java.util.List;
 import java.util.*;
 public class FileToArray {
 
+  /**
+   *
+   * @param name the name of the file to be converted into an array
+   * @return the values that were in the given file in an Integer array
+   */
     public Integer[] FileArray(String name) {
 
           List<Integer> numberList = new ArrayList<>();
 
+          //Scans the file while using whitespace as the delimiter
           try (Scanner scanner = new Scanner(new File(name))) {
             scanner.useDelimiter("\\s+"); // Use whitespace as the delimiter
 
+            //Adds the numbers scanned from the file into numberList until there are no numbers left
             while (scanner.hasNextInt()) {
               numberList.add(scanner.nextInt());
             }

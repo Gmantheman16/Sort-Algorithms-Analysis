@@ -6,7 +6,7 @@ public class Driver {
 
   public static void main(String[] args) {
     FileToArray fileReader = new FileToArray();
-
+    //All paths to locations of files
     String smallLocation = "src/src/SmallFiles/";
     String mediumLocation = "src/src/MediumFiles/";
     String largeLocation = "src/src/LargeFiles/";
@@ -28,6 +28,7 @@ public class Driver {
     System.out.println("Starting unsorted small files...");
     //Unsorted small files
     for(int i = 1; i <= 30; i++) {
+      //Converts file to an Integer array to be sorted
       Integer[] integers = fileReader.FileArray(smallLocation + "smallFile" + i);
 
       //QuickSort
@@ -74,8 +75,10 @@ public class Driver {
     }
 
     System.out.println("Finished unsorted small files\nStarting unsorted medium files...");
+
     //Unsorted medium files
     for(int i = 1; i <= 30; i++) {
+      //Converts file to an Integer array to be sorted
       Integer[] integers = fileReader.FileArray(mediumLocation + "mediumFile" + i);
 
       //QuickSort
@@ -124,6 +127,7 @@ public class Driver {
     System.out.println("Finished unsorted medium files\nStarting unsorted large files...");
     //Unsorted large files
     for(int i = 1; i <= 30; i++) {
+      //Converts file to an Integer array to be sorted
       Integer[] integers = fileReader.FileArray(largeLocation + "largeFile" + i);
 
       //QuickSort
@@ -141,6 +145,7 @@ public class Driver {
       endTime = System.currentTimeMillis();
       //Store time for mergesort in the correct array position
       mergeSortTime[i-1] = (endTime - startTime);
+
 
       //HeapSort
       startTime = System.currentTimeMillis();
@@ -172,6 +177,7 @@ public class Driver {
     System.out.println("Finished unsorted large files\nStarting sorted small files...");
     //Sorted Small Files
     for(int i = 1; i <= 30; i++) {
+      //Converts file to an Integer array to be sorted
       Integer[] integers = fileReader.FileArray(sortedSmallLocation + "smallSorted" + i);
 
       //QuickSort
@@ -220,6 +226,7 @@ public class Driver {
     System.out.println("Finished sorted small files\nStarting sorted medium files...");
     //Sorted Medium Files
     for(int i = 1; i <= 30; i++) {
+      //Converts file to an Integer array to be sorted
       Integer[] integers = fileReader.FileArray(sortedMediumLocation + "mediumSorted" + i);
 
       //QuickSort
@@ -269,6 +276,7 @@ public class Driver {
 
     //Sorted Large Files
     for(int i = 1; i <= 30; i++) {
+      //Converts file to an Integer array to be sorted
       Integer[] integers = fileReader.FileArray(sortedLargeLocation + "largeSorted" + i);
 
       //QuickSort
@@ -319,6 +327,7 @@ public class Driver {
     System.out.println("Finished sorted large files\nStarting reverse sorted small files...");
     //Reverse-Sorted Small Files
     for(int i = 1; i <= 30; i++) {
+      //Converts file to an Integer array to be sorted
       Integer[] integers = fileReader.FileArray(reverseSmallLocation + "smallReverse" + i);
 
       //QuickSort
@@ -366,6 +375,7 @@ public class Driver {
     System.out.println("Finished reverse sorted small files\nStarting reverse sorted medium files...");
     //Reverse-Sorted Medium Files
     for(int i = 1; i <= 30; i++) {
+      //Converts file to an Integer array to be sorted
       Integer[] integers = fileReader.FileArray(reverseMediumLocation + "mediumReverse" + i);
 
       //QuickSort
@@ -414,6 +424,7 @@ public class Driver {
     System.out.println("Finished reverse sorted medium files\nStarting reverse sorted large files...");
     //Reverse-Sorted Large Files
     for(int i = 1; i <= 30; i++) {
+      //Converts file to an Integer array to be sorted
       Integer[] integers = fileReader.FileArray(reverseLargeLocation + "largeReverse" + i);
 
       //QuickSort
