@@ -323,7 +323,6 @@ public class Driver {
     }
 
     //Reverse Sorted Files
-
     System.out.println("Finished sorted large files\nStarting reverse sorted small files...");
     //Reverse-Sorted Small Files
     for(int i = 1; i <= 30; i++) {

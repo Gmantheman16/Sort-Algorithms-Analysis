@@ -62,18 +62,15 @@ public class QuickSort {
       //If array[i] is less than the pivot
       if(array[i] < pivot) {
         int temp = array[less];
-        array[less] = array[i];
-        array[i] = temp;
+        array[less++] = array[i];
+        array[i++] = temp;
 
-        less++;
-        i++;
         //If array[i] is greater than the pivot
       } else if(array[i] > pivot) {
         int temp = array[i];
         array[i] = array[greater];
-        array[greater] = temp;
+        array[greater--] = temp;
 
-        greater--;
         //If array[i] is equal to the pivot
       } else {
         i++;
