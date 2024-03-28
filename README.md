@@ -5,35 +5,21 @@
 - This project was created to empirically test 3 common sort algorithms, QuickSort, MergeSort, and HeapSort
 - Since algorithms are commonly observed theoretically, my motivation for creating this project was to show the differences of these algorithms with concrete numbers
 - To test these sort algorithms empirically, they are each tested with unsorted, sorted, and reverse-sorted data. Each type of data includes 30 small samples (10,000 integers), 30 medium samples (100,000 integers), and 30 large samples (1,000,000 integers)
-- What did you learn?
-
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
-
+To install this code, follow these steps:
+1. Create a new empty project in your preferred IDE
+2. Copy and paste this command into your command line to clone the repository into your project:
+##
+        git clone https://github.com/Gmantheman16/Sort-Algorithms-Analysis.git
+3. Now, extract the src directory into your project folder and delete the Sort_Algorithms-Analysis directory
+4. If your IDE hasn't automatically changed its source to the src directory, manually change it in your settings. In IntelliJ, File>Project Structure>Modules, click on the src directory and select "Sources"
+5. If the SDK hasn't been automatically changed, change it to Java 17. In IntelliJ, File>Project Structure>Project
+6. Installation should be complete
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
-
-## Credits
-
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+To use this code after installation, follow these steps:
+1. Run 'FileCreation.java' to generate all necessary files
+2. After all files have been generated, run 'Driver.java' to run tests
+3. This will take a few minutes. After tests are finished, results are printed to 'Results.txt'
