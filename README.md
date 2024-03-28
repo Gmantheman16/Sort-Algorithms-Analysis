@@ -23,3 +23,4 @@ To use this code after installation, follow these steps:
 1. Run 'FileCreation.java' to generate all necessary files
 2. After all files have been generated, run 'Driver.java' to run tests
 3. This will take a few minutes. After tests are finished, results are printed to 'Results.txt'
+4. 'Results.txt' can be opened using Excel or another spreadsheet application to analyze the results further
