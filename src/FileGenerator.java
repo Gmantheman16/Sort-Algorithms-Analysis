@@ -44,7 +44,7 @@ public class FileGenerator {
         //Small Files
         if (numbers == 10000) {
           //Converts already generated unsorted file to an Integer array
-          int[] unsortedSmall = fileReader.FileArray(smallLocation + "smallFile" + i);
+          Integer[] unsortedSmall = fileReader.FileArray(smallLocation + "smallFile" + i);
           //Sorts the unsorted Integer array
           Arrays.sort(unsortedSmall);
 
@@ -60,7 +60,7 @@ public class FileGenerator {
           //Medium Files
         } else if (numbers == 100000) {
           //Converts already generated unsorted file to an Integer array
-          int[] unsortedMedium = fileReader.FileArray(mediumLocation + "mediumFile" + i);
+          Integer[] unsortedMedium = fileReader.FileArray(mediumLocation + "mediumFile" + i);
           //Sorts the unsorted array
           Arrays.sort(unsortedMedium);
 
@@ -76,7 +76,7 @@ public class FileGenerator {
           //Large Files
         } else if (numbers == 1000000) {
           //Converts an already generated unsorted file into an Integer array
-          int[] unsortedLarge = fileReader.FileArray(largeLocation + "largeFile" + i);
+          Integer[] unsortedLarge = fileReader.FileArray(largeLocation + "largeFile" + i);
           //Sorts the unsorted array
           Arrays.sort(unsortedLarge);
 
@@ -105,10 +105,9 @@ public class FileGenerator {
         //Small Files
         if (numbers == 10000) {
           //Converts an already generated sorted file into an Integer array
-          int[] sortedSmall = fileReader.FileArray(sortedSmallLocation + "smallSorted" + i);
+          Integer[] sortedSmall = fileReader.FileArray(sortedSmallLocation + "smallSorted" + i);
           //Turns the array into a List temporarily and reverses it
           Collections.reverse(Arrays.asList(sortedSmall));
-
           //Prints the now reverse-sorted array into a new file
           try (BufferedWriter writer = new BufferedWriter(new FileWriter(tempName))) {
 
@@ -122,7 +121,7 @@ public class FileGenerator {
           //Medium Files
           if (numbers == 100000) {
             //Converts an already generated sorted file into an Integer array
-            int[] sortedMedium = fileReader.FileArray(sortedMediumLocation + "mediumSorted" + i);
+            Integer[] sortedMedium = fileReader.FileArray(sortedMediumLocation + "mediumSorted" + i);
             //Turns the array into a List temporarily and reverses it
             Collections.reverse(Arrays.asList(sortedMedium));
 
@@ -138,7 +137,7 @@ public class FileGenerator {
         }
         if (numbers == 1000000) {
           //Converts an already generated sorted file into an Integer array
-          int[] sortedLarge = fileReader.FileArray(sortedLargeLocation + "largeSorted" + i);
+          Integer[] sortedLarge = fileReader.FileArray(sortedLargeLocation + "largeSorted" + i);
           //Turns the array into a List temporarily and reverses it
           Collections.reverse(Arrays.asList(sortedLarge));
 
