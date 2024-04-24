@@ -12,7 +12,7 @@ To install this code, follow these steps:
 1. Create a new empty project in your preferred IDE
 2. Copy and paste this command into your command line to clone the repository into your project:
 ##
-        git clone https://github.com/Gmantheman16/Sort-Algorithms-Analysis.git
+        git clone https://github.com/gg47633/Sort-Algorithms-Analysis.git
 3. Now, extract the src directory into your project folder and delete the now empty Sort_Algorithms-Analysis directory
 4. If your IDE hasn't automatically changed its source to the src directory, manually change it in your settings. In IntelliJ, File>Project Structure>Modules, click on the src directory and select "Sources"
 5. If the SDK hasn't been automatically changed, change it to Java 17. In IntelliJ, File>Project Structure>Project
